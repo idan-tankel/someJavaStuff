@@ -3,16 +3,21 @@ class Rows{
         return 0;
     }
 
-    public static int minAvgRow(int[][] array, int tempAvarage, int tempIndex){
+    public static int minAvgRow(int[][] array, int tempavarage, int startIndex){
         // stop condition, the array has only one raw
         if(array.length == 1)
             return 1;
         else{
-            // compute the avarage of the last line of the array
-            int avarage = 0;
+            // compute the avarageOnLastLine of the first line of the subarray
+            //the start index is the beginning of the subarray
+            double avarageOnLastLine = 0;
             for(int i=0;i<array[array.length-1].length;i++){
-                avarage += array[array.length-1][i];
+                avarageOnLastLine += array[array.length-1][i];
             }
+            avarageOnLastLine = avarageOnLastLine/(array[array.length-1].length);
+            // get the most minimum avarageOnLastLine raw from the rest of the array
+            // to prevent array being manipulated, pass the last line of the test by an argument
+            // if the avarage on last line is lower than avarage on rest of the array -
             return 0;
         }
     }
