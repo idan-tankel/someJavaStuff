@@ -19,6 +19,7 @@ public class Strings {
             return daughter(s1.substring(1), s2);
     }
 
+    // a little test
     public static void main(String[] args) {
         String s1 = "Hello world";
         String s2 = "Hllo wold";
